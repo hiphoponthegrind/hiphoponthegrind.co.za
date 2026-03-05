@@ -3,33 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <title>Hip Hop on the Grind</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Impact', sans-serif;
+        }
+        .accent {
+            color: #C00000;
+        }
+        /* Custom animations and responsive styles */
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        /* Add more styles as needed */
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Hip Hop on the Grind</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+<body class="flex flex-col items-center justify-center">
+    <header class="p-5 text-center">
+        <h1 class="text-4xl accent font-bold">Hip Hop on the Grind</h1>
+        <div class="hero">
+            <img src="path_to_vinyl_image" alt="Spinning Vinyl" class="w-1/2 animate-spin" />
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Latest News</h2>
-            <p>Stay tuned for the latest happenings in the hip hop scene!</p>
+    <main class="w-full">
+        <section class="news-feed">
+            <h2 class="text-2xl accent">Latest News</h2>
+            <!-- dynamic news content -->
         </section>
-        <section>
-            <h2>Upcoming Events</h2>
-            <p>Check out our upcoming events and join us!</p>
+        <section class="artist-roster tabs">
+            <h2 class="text-2xl accent">Artist Roster</h2>
+            <!-- dynamic artist roster content -->
+        </section>
+        <section class="ww-league">
+            <h2 class="text-2xl accent">Word War League Divisions</h2>
+            <!-- league divisions content -->
+        </section>
+        <section class="services">
+            <h2 class="text-2xl accent">Our Services</h2>
+            <!-- services details -->
+        </section>
+        <section class="contact">
+            <h2 class="text-2xl accent">Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" class="border p-2 m-2 w-1/2" />
+                <input type="email" placeholder="Your Email" class="border p-2 m-2 w-1/2" />
+                <textarea placeholder="Your Message" class="border p-2 m-2 w-full"></textarea>
+                <button type="submit" class="bg-accent p-2">Send Message</button>
+            </form>
+            <div class="map">
+                <!-- embed map here -->
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Hip Hop on the Grind. All rights reserved.</p>
+    <footer class="w-full p-5 text-center">
+        <p>&copy; 2026 Hip Hop on the Grind</p>
     </footer>
+    <script>
+        // JavaScript functionality goes here
+    </script>
 </body>
 </html>
